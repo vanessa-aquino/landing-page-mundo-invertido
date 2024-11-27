@@ -67,10 +67,3 @@ header button:hover {
     mask: var(--character-bottom-image-src) bottom / contain no-repeat;
     --webkit-mask: var(--character-bottom-image-src) bottom / contain;
 }
-
-main {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}

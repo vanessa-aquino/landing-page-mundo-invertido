@@ -47,12 +47,26 @@
 
 /* Generic Styles */
 
+* {
+  transition: 1s;
+}
+
+.dark-theme button, .dark-theme h1, .dark-theme h2, .dark-theme h3 {
+  letter-spacing: 5px;
+  font-weight: normal;
+}
+
+.dark-theme .invert-element {
+  transform: rotateZ(180deg) scaleX(-1);
+}
+
 h1, h2, h3 {
     font-family: var(--featured-font-family);
     font-size: 3rem;
     color: var(--primary-color);
     text-transform: uppercase;
     margin-bottom: 40px;
+    font-weight: 400;
 }
 
 p {
@@ -72,4 +86,22 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     transition: background 1s;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  border: 2px solid var(--primary-color-contrast);
+  background-color: var(--field-background-color);
+  color: var(--primary-color-contrast);
+  padding: 8px;
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
+input:focus-visible, textarea:focus-visible {
+  outline: none;
+  border-color: #000000;
 }

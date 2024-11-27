@@ -1,0 +1,35 @@
+footer {
+    padding: 60px 0;
+    background-color: var(--footer-background-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+footer p {
+    max-width: 700px;
+    margin-bottom: 24px;
+}
+
+footer::before, footer::after {
+    content: '';
+    width: 300px;
+    height: 200px;
+    background: url('../images/footer/tape.svg') no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -30px;
+}
+
+footer::before {
+    left: -50px;
+    transform: rotateZ(-10deg);
+}
+
+footer::after {
+    right: -50px;
+    transform: rotateZ(-10deg);
+}

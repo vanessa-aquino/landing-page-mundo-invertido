@@ -1,0 +1,97 @@
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    background: var(--page-background) no-repeat, url('../images/backgrounds/florest.png') no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 95px;
+}
+
+.container {
+    max-width:  1200px;
+}
+
+#section-inverted-world {
+    align-items: center;
+}
+
+#section-inverted-world .section-texts {
+    width: 50%;
+}
+
+#section-inverted-world .section-texts h1 {
+    max-width: 300px;
+}
+
+#section-stranger-things-trailer .section-texts{
+    width: 50%;
+    text-align: right;
+}
+
+#section-stranger-things-trailer .section-texts h2 {
+    max-width: 425px;
+    display: inline-block;
+}
+
+#section-stranger-things-trailer .video-frame {
+    background-color: var(--primary-color);
+}
+
+#section-stranger-things-trailer .video-frame iframe {
+    position: relative;
+    bottom: 24px;
+    left: 24px;
+    border: 3px solid;
+    border-image: linear-gradient(var(--primary-color), var(--primary-color-contrast));
+    border-image-slice: 10;
+}
+
+#section-stranger-things-gallery {
+    width: 100%;
+    justify-content: center;
+    background: var(--background-lamp-image) 120% / 50% no-repeat;
+}
+
+#section-stranger-things-gallery .container {
+    width: 100%;
+}
+
+
+#section-stranger-things-gallery .container h2 {
+    width: 600px;
+}
+
+#section-stranger-things-gallery .gallery-container {
+    display: flex;
+    gap: 50px;
+    padding-left: 20px;
+}
+
+#section-stranger-things-gallery .gallery-image {
+    width: 250px;
+    height: 250px;
+    outline: 20px solid var(--highlight-color);
+    border: 3px solid var(--primary-color);
+    box-sizing: initial;
+}
+
+#section-stranger-things-gallery .gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 10px solid var(--highlight-color);
+}
+
