@@ -5,17 +5,7 @@ main {
     align-items: center;
     background: var(--page-background) no-repeat, url('../images/backgrounds/florest.png') no-repeat;
     background-size: cover;
-
 }
-
-/* main::before {
-    content: '';
-    width: 100%;
-    position: absolute;
-    background: var(--page-background) no-repeat, url('../images/backgrounds/florest.png') no-repeat;
-    background-size: cover;
-    z-index: -1;
-} */
 
 section {
     display: flex;
@@ -25,24 +15,47 @@ section {
 
 .container {
     max-width:  1200px;
+    @media (max-width:1115px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 #section-inverted-world {
     align-items: center;
     margin-top: -200px;
+
+    @media (max-width:625px) {
+        margin-top: -200px;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
 }
 
 #section-inverted-world .section-texts {
     width: 50%;
+
+    @media (max-width:625px) {
+    width: 100%;
+    margin-top: 30px;
+    }
 }
 
 #section-inverted-world .section-texts h1 {
     max-width: 300px;
+    
 }
 
 #section-stranger-things-trailer .section-texts{
     width: 50%;
     text-align: right;
+}
+
+#section-inverted-world img {
+    @media (max-width:711px) {
+        width: 300px;
+    }
 }
 
 #section-stranger-things-trailer .section-texts h2 {
@@ -66,7 +79,7 @@ section {
 #section-stranger-things-gallery {
     width: 100%;
     justify-content: center;
-    background: var(--background-lamp-image) 120% / 50% no-repeat;
+    background: var(--background-lamp-image) 110% / 50% no-repeat;
 }
 
 #section-stranger-things-gallery .container {

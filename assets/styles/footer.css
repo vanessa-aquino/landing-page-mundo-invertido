@@ -12,6 +12,12 @@ footer {
 footer p {
     max-width: 700px;
     margin-bottom: 24px;
+    z-index: 2;
+    font-weight: bold;
+
+    @media (max-width:1115px) {
+        width: 500px;
+    }
 }
 
 footer::before, footer::after {
@@ -22,6 +28,12 @@ footer::before, footer::after {
     background-size: contain;
     position: absolute;
     bottom: -30px;
+
+    @media (max-width:1115px) {
+        width: 250px;
+        height: 250px;
+        top: 100px
+    }
 }
 
 footer::before {

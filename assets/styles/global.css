@@ -71,6 +71,7 @@ h1, h2, h3 {
 
 p {
     color: var(--highlight-color);
+    line-height: 20px;
 }
 
 p, input, textarea, label {
@@ -104,4 +105,20 @@ input, textarea {
 input:focus-visible, textarea:focus-visible {
   outline: none;
   border-color: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 5px; 
+}
+
+::-webkit-scrollbar-track {
+  background: var(--header-background-color); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color); /
 }
