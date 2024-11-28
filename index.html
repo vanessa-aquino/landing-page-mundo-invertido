@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/styles/form.css"/>
     <link rel="stylesheet" href="assets/styles/footer.css"/>
   </head>
-  <body class="ligth-theme" aria-label="O site está utilizando o tema light" role="body">
+  <body class="light-theme" aria-label="O site está utilizando o tema light" role="body">
     <header aria-label="Cabeçalho da página.">
       <audio id="music" autoplay>
         <source src="assets/musics/normal-world.mpeg" aria-details="Audio do site" />
@@ -134,12 +134,24 @@
       </p>
       <img src="assets/images/footer/logo.svg" alt="">
     </footer>
-    
+    <!-- Scripts -->
     <script type="module" src="assets/js/main.js"></script>
     <script>
+      window.addEventListener('click', function() {
+        const audio = document.getElementById('music');
+        audio.play();
+        audio.volume = 0.2;
+      })
       function switchTheme() {
         document.body.classList.toggle('dark-theme');
-        document.body.classList.toggle('ligth-theme');
+        document.body.classList.toggle('light-theme');
+
+        const theme = document.body.classList[0];
+        const music = theme === 'light-theme' ? 'normal-world.mpeg' : 'inverted-world.mpeg';
+        const audio = document.getElementById('music');
+        audio.src = `assets/musics/${music}`;
+        audio.play();
+        audio.volume = 0.2;  
       }
     </script>
   </body>

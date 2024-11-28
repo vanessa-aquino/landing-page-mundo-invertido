@@ -54,8 +54,8 @@ header button:hover {
     height: 100%;
     background-color: var(--character-top-image-color);
     bottom: -3px;
-    mask: var(--character-top-image-src) bottom / contain no-repeat;
-    --webkit-mask: var(--character-top-image-src) bottom / contain;
+    mask: var(--character-top-image-src) bottom / 100% no-repeat;
+    --webkit-mask: var(--character-top-image-src) bottom / 100%;
 }
 
 #bottom-characters {
@@ -64,6 +64,6 @@ header button:hover {
     top: 3px;
     transform: rotate(180deg) scaleX(-1);
     position: relative;
-    mask: var(--character-bottom-image-src) bottom / contain no-repeat;
-    --webkit-mask: var(--character-bottom-image-src) bottom / contain;
+    mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
+    --webkit-mask: var(--character-bottom-image-src) bottom / 100%;
 }
