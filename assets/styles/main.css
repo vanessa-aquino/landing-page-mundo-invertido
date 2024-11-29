@@ -15,17 +15,13 @@ section {
 
 .container {
     max-width:  1200px;
-
-    @media (max-width:1115px) {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
 }
 
 #section-inverted-world {
     align-items: center;
     margin-top: -200px;
     z-index: 1;
+    width: 90%;
 
     @media (max-width:625px) {
         margin-top: -250px;
@@ -59,6 +55,8 @@ section {
 }
 
 #section-stranger-things-trailer {
+    width: 90%;
+    
     @media (max-width:1090px) {
         display: flex;
         flex-direction: column;
