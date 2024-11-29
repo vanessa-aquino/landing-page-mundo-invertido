@@ -15,6 +15,7 @@ section {
 
 .container {
     max-width:  1200px;
+
     @media (max-width:1115px) {
         padding-left: 5%;
         padding-right: 5%;
@@ -24,11 +25,12 @@ section {
 #section-inverted-world {
     align-items: center;
     margin-top: -200px;
+    z-index: 1;
 
     @media (max-width:625px) {
-        margin-top: -200px;
+        margin-top: -250px;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; 
         width: 100%;
     }
 }
@@ -37,34 +39,62 @@ section {
     width: 50%;
 
     @media (max-width:625px) {
-    width: 100%;
+    width: 90%;
     margin-top: 30px;
     }
 }
 
 #section-inverted-world .section-texts h1 {
     max-width: 300px;
-    
-}
-
-#section-stranger-things-trailer .section-texts{
-    width: 50%;
-    text-align: right;
 }
 
 #section-inverted-world img {
     @media (max-width:711px) {
         width: 300px;
     }
+
+    @media (max-width:625px) {
+        width: 350px;
+    }
+}
+
+#section-stranger-things-trailer {
+    @media (max-width:1090px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#section-stranger-things-trailer .section-texts{
+    width: 50%;
+    text-align: right;
+
+    @media (max-width:1090px) {
+        display: flex;
+        flex-direction: row;
+        padding-top: 2rem;
+        align-items: center;
+        width: 100%;
+    }
+
+    @media (max-width:791px) {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 #section-stranger-things-trailer .section-texts h2 {
     max-width: 425px;
     display: inline-block;
+
+    @media (max-width:1090px) {
+      text-align: left;
+    }
 }
 
 #section-stranger-things-trailer .video-frame {
     background-color: var(--primary-color);
+    height: 220px;
 }
 
 #section-stranger-things-trailer .video-frame iframe {
@@ -74,12 +104,23 @@ section {
     border: 3px solid;
     border-image: linear-gradient(var(--primary-color), var(--primary-color-contrast));
     border-image-slice: 10;
+
+    @media (max-width:1090px) {
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    }
+
 }
 
 #section-stranger-things-gallery {
     width: 100%;
     justify-content: center;
     background: var(--background-lamp-image) 110% / 50% no-repeat;
+
+    @media (max-width:1115px) {
+    background: var(--background-lamp-image) 120% / 40% no-repeat;
+    }
 }
 
 #section-stranger-things-gallery .container {

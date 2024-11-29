@@ -1,5 +1,5 @@
 header {
-    min-height: 850px;
+    min-height: 780px;
     display: flex;
     justify-content: center;
     background-color: var(--header-background-color);
@@ -66,4 +66,9 @@ header button:hover {
     position: relative;
     mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
     --webkit-mask: var(--character-bottom-image-src) bottom / 100%;
+
+    @media (min-width:491px) and (max-width:625px) {
+        mask: var(--character-bottom-image-src) bottom / 85% no-repeat;
+        --webkit-mask: var(--character-bottom-image-src) bottom / 85%;
+    }
 }
