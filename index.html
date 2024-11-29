@@ -109,16 +109,16 @@
           <div class="form-container">
             <form>
               <label for="name">Nome Completo</label>
-              <input type="text" name="name" id="txtName">
+              <input type="text" name="name" id="txtName" required>
           
               <label for="email">E-mail</label>
-              <input type="email" name="email" id="txtEmail">
+              <input type="email" name="email" id="txtEmail" required>
           
               <label for="level">Level</label>
-              <input type="text" name="level" id="txtLevel">
+              <input type="number" name="level" id="txtLevel" required>
           
               <label for="character">Personagem</label>
-              <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
+              <textarea name="character" cols="30" rows="10" id="txtCharacter" required></textarea>
             
               <button type="button" id="btnSubscribe">Me inscrever</button>
             </form>
@@ -137,5 +137,6 @@
     </footer>
     <!-- Scripts -->
     <script src="./assets/scripts/index.js" defer></script>
+    <script type="module" src="./assets/scripts/main.js"></script>
   </body>
 </html>
